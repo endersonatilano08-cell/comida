@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Sabor Culinario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header" style="min-height: auto; padding-bottom: 20px;">
+        <div class="menu container" style="position: relative;">
+            <a href="index.html" class="logo">Mi Restaurante</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.htm l">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="images/car.svg" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="contact-section container">
+        <h2>Contáctanos</h2>
+        <p>Envíanos un mensaje o visítanos en nuestro local.</p>
+
+        <div class="contact-grid">
+            
+            <form class="contact-form" action="#" method="get">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required pattern="[A-Za-z\s]+" title="El nombre solo debe contener letras, no números.">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="04141234567" required pattern="[0-9]{10,11}">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-1" style="border: none; cursor: pointer;">Enviar Mensaje</button>
+            </form>
+
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7845.700067966117!2d-66.92405450943282!3d10.512475657274447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a5ec431d05af3%3A0x36121356a4e815cb!2sLa%20Pastora%2C%20Caracas%201010%2C%20Distrito%20Capital!5e0!3m2!1ses!2sve!4v1788157536715!5m2!1ses!2sve" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Menú</h3>
+                <ul>
+                    <li><a href="productos.html">Desayunos</a></li>
+                    <li><a href="productos.html">Almuerzos</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Servicios</h3>
+                <ul>
+                    <li><a href="servicios.html">Para llevar</a></li>
+                    <li><a href="servicios.html">Reservaciones</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Información</h3>
+                <ul>
+                    <li><a href="contacto.html">Ubicación</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Descarga la App</h3>
+                <div class="descarga">
+                    <img src="images/store1.png" alt="">
+                    <img src="images/store2.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copy container">
+            <p>&copy; 2026 Todos los derechos reservados | Diseñado por: <strong>Enderson Lozada</strong> - C.I: <strong>31566232</strong></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
